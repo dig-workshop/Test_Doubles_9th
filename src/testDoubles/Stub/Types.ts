@@ -1,8 +1,5 @@
 // ※このデータ型は変更しないでください
-export enum Weather {
-    SUNNY,
-    RAINY,
-}
+export type Weather = "SUNNY" | "RAINY"
 
 export type WeatherRepository = {
     getWeather: () => Promise<Weather>
