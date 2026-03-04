@@ -1,5 +1,5 @@
 import {MockRocket} from './MockRocket'
-import {RocketLauncherImpl} from './RocketLauncher'
+import {RocketLauncherImpl} from '../RocketLauncher'
 import SpyRocket from './SpyRocket'
 import {StubFailureAuth, StubSuccessAuth} from "./StubAuth"
 

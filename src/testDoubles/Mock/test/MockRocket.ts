@@ -1,4 +1,4 @@
-import {Rocket} from "./Types";
+import {Rocket} from "../Types";
 
 export class MockRocket implements Rocket {
     private fire_wasCalled = false

@@ -1,5 +1,5 @@
 import {SpyRocket} from './SpyRocket'
-import {RocketLauncherImpl} from './RocketLauncher'
+import {RocketLauncherImpl} from '../RocketLauncher'
 import {StubFailureAuth, StubSuccessAuth} from "./StubAuth";
 
 describe('ロケット発射システム（RocketLauncherImpl）の認証機能のテスト', () => {

@@ -1,4 +1,4 @@
-import {Auth} from "./Types";
+import {Auth} from "../Types";
 
 export class StubSuccessAuth implements Auth {
     // 認証成功の状態を Stub できるように実装してください。

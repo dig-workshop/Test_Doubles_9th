@@ -1,4 +1,4 @@
-import {Rocket} from "./Types";
+import {Rocket} from "../Types";
 
 export class DummyRocket implements Rocket {
     fire() {

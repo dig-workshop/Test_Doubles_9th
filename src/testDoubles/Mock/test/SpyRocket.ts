@@ -1,4 +1,4 @@
-import {Rocket} from './Types'
+import {Rocket} from '../Types'
 export default class SpyRocket implements Rocket {
     fire_wasCalled: boolean = false
     fire(): void {

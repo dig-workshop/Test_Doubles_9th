@@ -1,5 +1,5 @@
 import {SpyRocket} from './SpyRocket'
-import {RocketLauncherImpl} from './RocketLauncher'
+import {RocketLauncherImpl} from '../RocketLauncher'
 import FakeAuthServer from './FakeAuthServer'
 
 describe('ロケット発射システムのテスト', ()=>{

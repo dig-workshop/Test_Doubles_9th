@@ -1,4 +1,4 @@
-import {AuthServer, User} from './Types'
+import {AuthServer, User} from '../Types'
 
 export default class FakeAuthServer implements AuthServer {
     private authedUsers: string[] = []
