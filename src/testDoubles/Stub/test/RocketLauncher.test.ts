@@ -1,13 +1,12 @@
 import { describe, it, expect, vi } from "vitest";
-import {RocketLauncherImpl, WeatherRepositoryImpl} from '../RocketLauncher'
-import {StubRainyWeatherRepository, StubSunnyWeatherRepository} from "./StubWeatherRepository";
+import {RocketLauncherImpl, WeatherRepositoryImpl} from "../RocketLauncher.js";
 
 describe('RocketLauncherImpl（ロケット発射装置）のテスト', () => {
 
 
     // 今の実装は WeatherRepositoryImpl を使っていますが、これはランダムに「晴れ」か「雨」を返すため、テストが安定しません。
     // まずはこの「晴れ」の時のテストが通るように、stubSunnyWeatherRepository を実装し、「晴れ」の状態を Stubしよう
-    // 正しく Stub ができたら、rocketLauncher の実装を修正しましょう。
+    // 正しく Stub ができたら、まずは「晴れ」のテストが通るようにrocketLauncher の実装を修正しましょう。
     it('天気が「晴れ」の場合、打ち上げを実行すること', async () => {
         const weatherRepository = new WeatherRepositoryImpl()
         const rocketLauncher = new RocketLauncherImpl(weatherRepository)
@@ -28,7 +27,7 @@ describe('RocketLauncherImpl（ロケット発射装置）のテスト', () => {
         expect(result).toBeFalsy()
     })
 
-    it('天気が「晴れ」の場合、打ち上げを実行すること(Jestのモック関数を使った場合)', async () => {
+    it('天気が「晴れ」の場合、打ち上げを実行すること(モック関数を使った場合)', async () => {
         const weatherRepository = {
             getWeather: vi.fn().mockReturnValue("SUNNY")
         }

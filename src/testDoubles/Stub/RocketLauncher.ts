@@ -1,4 +1,4 @@
-import {LaunchRocketSystem, Weather, WeatherRepository} from './Types'
+import type {LaunchRocketSystem, Weather, WeatherRepository} from "./Types.js";
 
 export class WeatherRepositoryImpl implements WeatherRepository {
     getWeather(): Promise<Weather> {

@@ -1,8 +1,8 @@
-import {MockRocket} from './MockRocket'
-import {RocketLauncherImpl} from '../RocketLauncher'
-import SpyRocket from './SpyRocket'
-import {StubFailureAuth, StubSuccessAuth} from "./StubAuth"
 import { describe, it, expect } from "vitest";
+import SpyRocket from "./SpyRocket.js";
+import {StubFailureAuth, StubSuccessAuth} from "./StubAuth.js";
+import {RocketLauncherImpl} from "../RocketLauncher.js";
+import {MockRocket} from "./MockRocket.js";
 
 
 describe('ロケット発射システム（RocketLauncherImpl）のテスト', () => {

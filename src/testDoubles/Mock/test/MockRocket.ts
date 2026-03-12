@@ -1,4 +1,4 @@
-import {Rocket} from "../Types";
+import type {Rocket} from "../Types.js";
 
 export class MockRocket implements Rocket {
     private fire_wasCalled = false

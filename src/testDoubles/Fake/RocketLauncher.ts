@@ -1,4 +1,4 @@
-import {AuthServer, LaunchRocketSystem, Rocket} from './Types'
+import type {AuthServer, LaunchRocketSystem, Rocket} from "./Types.js";
 
 export class RocketLauncherImpl implements LaunchRocketSystem {
     private rocket: Rocket

@@ -1,4 +1,4 @@
-import {AuthServer, User} from '../Types'
+import type {AuthServer, User} from "../Types.js";
 
 export default class FakeAuthServer implements AuthServer {
     private authedUsers: string[] = []

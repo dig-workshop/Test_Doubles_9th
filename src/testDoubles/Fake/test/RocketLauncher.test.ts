@@ -1,7 +1,7 @@
-import {SpyRocket} from './SpyRocket'
-import {RocketLauncherImpl} from '../RocketLauncher'
-import FakeAuthServer from './FakeAuthServer'
 import { describe, it, expect } from "vitest";
+import FakeAuthServer from "./FakeAuthServer.js";
+import {SpyRocket} from "./SpyRocket.js";
+import {RocketLauncherImpl} from "../RocketLauncher.js";
 
 
 describe('ロケット発射システムのテスト', ()=>{

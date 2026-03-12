@@ -1,4 +1,4 @@
-import {Rocket} from "../Types";
+import type {Rocket} from "../Types.js";
 
 export class DummyRocket implements Rocket {
     fire() {

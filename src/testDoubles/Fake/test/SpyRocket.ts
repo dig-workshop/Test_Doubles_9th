@@ -1,4 +1,5 @@
-import {Rocket} from '../Types'
+import type {Rocket} from "../Types.js";
+
 export class SpyRocket implements Rocket {
     fire_wasCalled = false
     fire() {
